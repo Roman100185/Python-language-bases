@@ -23,7 +23,7 @@ otstup = ''
 num = 1
 print('Список фруктов:')
 for num, fruit in enumerate(fruits, num):
-	print('{}.{:>2}{}'.format(num, otstup, fruit.title()))
+    print('{}.{:>2}{}'.format(num, otstup, fruit.title()))
 print('', '\n')
 
 
@@ -52,16 +52,18 @@ print('', '\n')
 # Task_3
 print('Task_3')
 spisok = [1, 2, 3, 8, 9, 0, 4, 5, 6, 7]
+new_spisok = []
 spisok.sort()
 a = ''
 b = ''
 print('Текущий список:', spisok)
 print('Количество элементов в списке:', len(spisok))
 for i in range(len(spisok)):
-	#проверка элементов списка на четность
-	if i % 2 == 0:
-		a = i/4
-		print('Список:', a)
-	if i % 2 != 0:
-		b = i**2
-		print(b)
+    #проверка элементов списка на четность
+    if i % 2 == 0:
+        a = i/4
+        new_spisok.append(a)
+    if i % 2 != 0:
+        b = i*2
+        new_spisok.append(b)
+print(new_spisok)
