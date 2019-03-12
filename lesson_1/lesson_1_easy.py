@@ -25,7 +25,7 @@ while num<=10:
 # Не нужно решать задачу так:
 # print("a = ", b, "b = ", a) - это неправильное решение!
 
-#Task_2.1
+# Task_2.1
 
 num1=int(input("Enter first number "))
 num2=int(input("Enter second number "))
